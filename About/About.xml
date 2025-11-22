@@ -1,7 +1,7 @@
 <ModMetaData>
 	<name>GrimWorld 40,000 - Rulers Beta</name>
 	<author>Clashgore, Tittymcswaggy, Alite, Abomination, sk4p3g04t, Sandwish, TwoLargeGayMen</author>
-	<packageId>grimworld.talonOfTheEmperor</packageId>
+	<packageId>grimworld.HighestRulers</packageId>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/Icons/TalonsOfTheEmperorModIcon</modIconPath>
 	<supportedVersions>
       <li>1.5</li>
