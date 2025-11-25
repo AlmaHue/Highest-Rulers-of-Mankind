@@ -1,0 +1,38 @@
+<Defs>
+    <AbilityDef>
+        <defName>EmperorLOTDAbility</defName>
+        
+        <label>The Legion Beckons</label>
+        
+        
+        <description>Summons a member of the legion of the damned to fight for you.</description>
+        
+        <iconPath>UI/Abilities/AbilityIcon</iconPath> <!-- Placeholder icon path -->
+        
+        
+        <cooldownTicks>72000</cooldownTicks>
+        
+    
+        <comps>
+            <li Class="YourModNamespace.CompProperties_CompAbilityEffect_EmperorLOTD"/>
+        </comps>
+        
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <label>Summon</label>
+            <hastarget>True</hastarget>
+            <targetWorldMap>False</targetWorldMap>
+            <range>80</range>
+            <warmupTicks>60</warmupTicks>
+            <burstShotCount>1</burstShotCount>
+            <soundCast>ChargeBlaster</soundCast> <!-- Placeholder sound -->
+            <requireLineOfSight>True</requireLineOfSight>
+            <targetParams>
+                <canTargetAnimals>False</canTargetAnimals>
+                <canTargetPawns>False</canTargetPawns>
+                <canTargetBuildings>False</canTargetBuildings>
+                <canTargetCells>True</canTargetCells>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+</Defs>

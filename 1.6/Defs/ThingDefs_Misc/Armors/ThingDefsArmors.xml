@@ -1,7 +1,7 @@
 <Defs>
 	
 	
-	<ThingDef Abstract="true" Name="GW_ScatteredSons_ArmorBase" ParentName="ArmorMachineableBase">
+	<ThingDef Abstract="true" Name="GW_Rulers_ArmorBase" ParentName="ArmorMachineableBase">
 		<techLevel>Spacer</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -96,8 +96,8 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<ThingDef ParentName="GW_ScatteredSons_ArmorBase">
-		<defName>GW_HRM_Emperor</defName>
+	<ThingDef ParentName="GW_Rulers_ArmorBase">
+		<defName>GW_Rulers_Emperor</defName>
 		<label>Beta Emperor armor</label>
 		<description>BETA BETA BETA BETA </description>
 		<graphicData>
@@ -152,9 +152,7 @@
 			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
 				<apparelSetEffect>
 					<allApparels>
-						<li>GW_SM_ChapterMasterBackpack</li>
-						<li>GW_SM_ChapterMasterHelmet</li>
-						<li>GW_SM_ChapterMasterShoulderPads</li>
+						<li>GW_Rulers_Emperor</li>
 					</allApparels>
 					<hediff>GW40k_SS_InspiringAura</hediff>
 				</apparelSetEffect>
@@ -382,5 +380,154 @@
 		</comps>
 	</ThingDef> --> 
 
+	<ThingDef Abstract="true" Name="GW_SM_ArmorBase" ParentName="ArmorMachineableBase">
+        <techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="false">
+				<li>GW_SM_ArmorBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<uiIconScale>1.0</uiIconScale>
+        <tradeTags>
+            <li>HPArmor</li>
+        </tradeTags>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="ludeon.rimworld.odyssey">0.6</VacuumResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<drawData>
+				<dataNorth>
+					<layer>74</layer>
+				</dataNorth>
+                <dataWest>
+                    <offset>(0.0, 0.0, -0.1)</offset>
+                </dataWest>
+                <dataEast>
+                    <offset>(0.0, 0.0, -0.1)</offset>
+                </dataEast>
+                <!--<scale>1.5</scale> Uncomment these to increase size while equipped
+                <childScale>1.5</childScale>-->
+            </drawData>
+			<tags>
+				<li>Spacer</li>
+				<li>EVA</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li MayRequire="ceteam.combatextended">Hands</li>
+				<li MayRequire="ceteam.combatextended">Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<comps>
+            <li Class="GW4KArmor.CompProperties_TriColorMask">
+                <maskCount>4</maskCount>
+                <palettePresets>GW_SM_TorsoChapterPalettes</palettePresets>
+                <defaultPalette>
+                    <colorA>(250, 176, 67)</colorA>
+					<colorB>(250, 176, 67)</colorB>
+					<colorC>(180, 65, 74)</colorC>
+                </defaultPalette>
+            </li>
+        </comps>
+	    <modExtensions>
+			<li Class="VEF.Apparels.ApparelExtension">
+                <isUnifiedApparel>true</isUnifiedApparel>
+				<hideHead>false</hideHead>
+            </li>
+            <li Class="CombatExtended.PartialArmorExt" MayRequire="ceteam.combatextended">
+                <stats>		  				  
+                    <li>
+                        <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+	    </modExtensions>
+    </ThingDef>
 
+
+
+
+<ThingDef Name="GW_SM_GravisArmorBase" ParentName="GW_SM_ArmorBase">
+        <defName>GW_HRM_LOTD</defName>
+		<label>Gravis power armor (Lotd)</label>
+        	<description>A heavyweight suit of Power Armor, of the Mk X Gravis pattern. A cut above standard Tacticus armor, it allows the wearer to take more fire than normal while responding in kind. \n\nThe heavyweight Aggressors, the plasma-wielding Eradicators, and some officers of the Primaris Space Marines all wear this armor. Inceptors, wearing jump-packs, also use this armor to great effect, compensating for lower mobility with the power to leap long distances.</description>
+		<graphicData>
+			<texPath>Firstborn/LOTDFirstBorn_Brother_East</texPath>
+		</graphicData>
+		<recipeMaker>
+            <researchPrerequisite>GW_SM_AstartesHeavy</researchPrerequisite>
+        </recipeMaker>
+        <statBases>
+			<WorkToMake>80000</WorkToMake>
+			<MaxHitPoints>500</MaxHitPoints>
+			<MarketValue>2300</MarketValue>
+			<Mass>11</Mass>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>.56</ArmorRating_Blunt>
+			<ArmorRating_Heat>.63</ArmorRating_Heat>
+			<Insulation_Cold>38</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Plasteel>220</Plasteel>
+			<HP_Ceramite>165</HP_Ceramite>
+		</costList>
+		<apparel>
+			<drawData>
+				<dataWest>
+					<layer>70</layer>
+				</dataWest>
+				<dataEast>
+					<layer>70</layer>
+				</dataEast>
+            </drawData>
+            <wornGraphicPath>Firstborn/LOTDFirstBorn_Brother</wornGraphicPath>
+			<tags>
+				<li>PrestigeCombatGear</li>
+                <li>GW_Gravis</li>
+			</tags>
+		</apparel>
+    </ThingDef>
 </Defs>
