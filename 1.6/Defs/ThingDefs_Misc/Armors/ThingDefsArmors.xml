@@ -10,7 +10,7 @@
 				<Intellectual>15</Intellectual>
 			</skillRequirements>
 			<recipeUsers Inherit="false">
-				<li>GW_SM_ScatteredSons_ArmorBench</li>
+				<li>GW_Autoforge</li>
 			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
