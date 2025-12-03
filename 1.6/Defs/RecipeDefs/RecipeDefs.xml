@@ -1,0 +1,317 @@
+<Defs>
+	<RecipeDef Name="GW_Ruler_SwapVariantRecipeBase" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>5000</workAmount>	
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+		  <li>GW_Autoforge</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapEmperorArmor</defName>
+		<label>make Emperor armor paintable</label>
+		<description>make Emperor armor paintable.</description>
+		<jobString>make Emperor armor paintable.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_EmperorArmor</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_EmperorArmor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_EmperorArmorW>1</GW_Rulers_EmperorArmorW>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapEmperorArmorW</defName>
+		<label>pre-paint Emperor armor</label>
+		<description>pre-paint Emperor armor.</description>
+		<jobString>make Emperor armor pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_EmperorArmorW</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_EmperorArmorW</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_EmperorArmor>1</GW_Rulers_EmperorArmor>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapEmperorShoulder</defName>
+		<label>make Emperor shoulder paintable</label>
+		<description>make Emperor shoulder paintable.</description>
+		<jobString>make Emperor shoulder pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_EmperorShoulder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_EmperorShoulder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_EmperorShoulderW>1</GW_Rulers_EmperorShoulderW>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapEmperorShoulderW</defName>
+		<label>pre-paint Emperor shoulder</label>
+		<description>pre-paint Emperor shoulder.</description>
+		<jobString>make Emperor shoulder pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_EmperorShoulderW</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_EmperorShoulderW</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_EmperorShoulder>1</GW_Rulers_EmperorShoulder>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapEmperorCrown</defName>
+		<label>make Emperor crown paintable</label>
+		<description>make Emperor crown paintable.</description>
+		<jobString>make Emperor crown pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_EmperorHelmet</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_EmperorHelmet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_EmperorHelmetW>1</GW_Rulers_EmperorHelmetW>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapEmperorCrownW</defName>
+		<label>pre-paint Emperor crown</label>
+		<description>pre-paint Emperor crown.</description>
+		<jobString>make Emperor crown pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_EmperorHelmetW</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_EmperorHelmetW</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_EmperorHelmet>1</GW_Rulers_EmperorHelmet>
+		</products>
+	</RecipeDef>
+
+	<!-- =========================== -->
+	
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapValdorArmor</defName>
+		<label>make Valdor armor paintable</label>
+		<description>make Valdor armor paintable.</description>
+		<jobString>make Valdor armor paintable.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_ValdorArmor</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_ValdorArmor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_ValdorArmorW>1</GW_Rulers_ValdorArmorW>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapValdorArmorW</defName>
+		<label>pre-paint Valdor armor</label>
+		<description>pre-paint Valdor armor.</description>
+		<jobString>make Valdor armor pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_ValdorArmorW</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_ValdorArmorW</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_ValdorArmor>1</GW_Rulers_ValdorArmor>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapValdorShoulder</defName>
+		<label>make Valdor shoulder paintable</label>
+		<description>make Valdor shoulder paintable.</description>
+		<jobString>make Valdor shoulder pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_ValdorShoulder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_ValdorShoulder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_ValdorShoulderW>1</GW_Rulers_ValdorShoulderW>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapValdorShoulderW</defName>
+		<label>pre-paint Valdor shoulder</label>
+		<description>pre-paint Valdor shoulder.</description>
+		<jobString>make Valdor shoulder pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_ValdorShoulderW</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_ValdorShoulderW</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_ValdorShoulder>1</GW_Rulers_ValdorShoulder>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapValdorHelmet</defName>
+		<label>make Valdor helmet paintable</label>
+		<description>make Valdor helmet paintable.</description>
+		<jobString>make Valdor helmet pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_ValdorHelmet</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_ValdorHelmet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_ValdorHelmetW>1</GW_Rulers_ValdorHelmetW>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GW_Ruler_SwapVariantRecipeBase">
+		<defName>GW_Ruler_SwapValdorHelmetW</defName>
+		<label>pre-paint Valdor helmet</label>
+		<description>pre-paint Valdor crown.</description>
+		<jobString>make Valdor crown pretty.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GW_Rulers_ValdorHelmetW</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GW_Rulers_ValdorHelmetW</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GW_Rulers_ValdorHelmet>1</GW_Rulers_ValdorHelmet>
+		</products>
+	</RecipeDef>
+</Defs>

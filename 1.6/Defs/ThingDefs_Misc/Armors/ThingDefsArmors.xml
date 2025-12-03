@@ -97,14 +97,14 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="GW_Rulers_ArmorBase">
-		<defName>GW_Rulers_Emperor</defName>
-		<label>Beta Emperor armor</label>
-		<description>BETA BETA BETA BETA </description>
+		<defName>GW_Rulers_EmperorArmorW</defName>
+		<label>Beta Emperor armor(W)</label>
+		<description>BETA BETA BETA BETA</description>
 		<graphicData>
-			<texPath>Emperor/GW_HRM_Emperor_ArmorC</texPath>
+			<texPath>Emperor/GW_HRM_Emperor_ArmorW_south</texPath>
 		</graphicData>
 		<recipeMaker>
-			<!-- make this custodes <researchPrerequisite>GW_SM_Guilliman</researchPrerequisite> -->
+			<researchPrerequisite>Fabrication</researchPrerequisite>
 		</recipeMaker>
 		<equippedStatOffsets>
 			<InjuryHealingFactor>4</InjuryHealingFactor>
@@ -127,7 +127,73 @@
 		<tickerType>Normal</tickerType> 
 		<costList>
 			<ComponentSpacer>10</ComponentSpacer>
-			<GW_ComponentRelic>6</GW_ComponentRelic>
+			<GW_Ruler_Template>1</GW_Ruler_Template>
+			<Plasteel>350</Plasteel>
+			<HP_Ceramite>200</HP_Ceramite>
+			<HP_Adamantium>110</HP_Adamantium>
+			<HP_Auramite>50</HP_Auramite>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Emperor/GW_HRM_Emperor_ArmorW</wornGraphicPath>
+			<tags>
+				<li>GW_ChapterMaster</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="GW4KArmor.CompProperties_TriColorMask">
+				<maskCount>1</maskCount>
+				<palettePresets>GW_SM_TorsoChapterPalettes</palettePresets>
+				<defaultPalette>
+					<colorA>(250, 176, 67)</colorA>
+					<colorB>(250, 176, 67)</colorB>
+					<colorC>(180, 65, 74)</colorC>
+				</defaultPalette>
+			</li>
+			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
+				<apparelSetEffect>
+					<allApparels>
+						<li>GW_Rulers_EmperorArmorW</li>
+						<li>GW_Rulers_EmperorShoulderW</li>
+						<li>GW_Rulers_EmperorHelmetW</li>
+					</allApparels>
+					<hediff>GW_Ruler_EmperorAura</hediff>
+				</apparelSetEffect>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="GW_Rulers_ArmorBase">
+		<defName>GW_Rulers_EmperorArmor</defName>
+		<label>Beta Emperor armor</label>
+		<description>BETA BETA BETA BETA</description>
+		<graphicData>
+			<texPath>Emperor/GW_HRM_Emperor_ArmorC_south</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<InjuryHealingFactor>4</InjuryHealingFactor>
+			<MentalBreakThreshold>-0.50</MentalBreakThreshold>
+			<PsychicSensitivity>4</PsychicSensitivity>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>150000</WorkToMake>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<MarketValue>25000</MarketValue>
+			<Mass>11</Mass>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.75</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>14</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<tickerType>Normal</tickerType> 
+		<costList>
+			<ComponentSpacer>10</ComponentSpacer>
+			<GW_Ruler_Template>1</GW_Ruler_Template>
 			<Plasteel>350</Plasteel>
 			<HP_Ceramite>200</HP_Ceramite>
 			<HP_Adamantium>110</HP_Adamantium>
@@ -140,105 +206,43 @@
 			</tags>
 		</apparel>
 		<comps>
-			<li Class="GW4KArmor.CompProperties_TriColorMask">
-				<maskCount>4</maskCount>
-				<palettePresets>GW_SM_TorsoChapterPalettes</palettePresets>
-				<defaultPalette>
-					<colorA>(250, 176, 67)</colorA>
-					<colorB>(250, 176, 67)</colorB>
-					<colorC>(180, 65, 74)</colorC>
-				</defaultPalette>
-			</li>
 			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
 				<apparelSetEffect>
 					<allApparels>
-						<li>GW_Rulers_Emperor</li>
+						<li>GW_Rulers_EmperorArmor</li>
+						<li>GW_Rulers_EmperorShoulder</li>
+						<li>GW_Rulers_EmperorHelmet</li>
 					</allApparels>
-					<hediff>GW40k_SS_InspiringAura</hediff>
+					<hediff>GW_Ruler_EmperorAura</hediff>
 				</apparelSetEffect>
 			</li>
 		</comps>
 	</ThingDef>
 	
-	<!-- <ThingDef ParentName="GW_ScatteredSons_ArmorBase">
-		<defName>GW_SM_GuillimanArmor</defName>
-		<label>Armor of Fate</label>
-		<description>A carefully-crafted replica of the Armor of Fate, the Power Armor worn by the Imperial Regent Roboute Guilliman. It would be safe to consider this design to be the pinnacle of Power Armor technology - an opponent would need a large volume of anti-armor fire to even faze the wearer. \n\nSpecial security measures are interlaced within the armor’s systems - it cannot be reproduced without them. First, the armor can only be worn by the first person to wear it. Second, the armor will cease functioning if another, identical suit is detected in its vicinity under the same faction - this is an attempt to stop “techno-barbarians” from becoming too powerful. \n\nThe original Armor of Fate was even further enhanced by the power of Ynnead, the nascent Eldar god of the dead. Combined with the advanced life-preserving technology built into the armor by the Adeptus Mechanicus, the Armor of Fate healed the grievously-wounded Primarch and restored him to full strength.</description>
+	<ThingDef ParentName="GW_Rulers_ArmorBase">
+		<defName>GW_Rulers_ValdorArmorW</defName>
+		<label>Valdor armor(W)</label>
+		<description>WIP</description>
 		<graphicData>
-			<texPath>Things/Apparel/Armor_Guilliman/GuillimanC_torso</texPath>
+			<texPath>Valdor/GW_HRM_Valdor_ArmorW_south</texPath>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>GW_SM_Guilliman</researchPrerequisite>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
 		</recipeMaker>
 		<equippedStatOffsets>
-			<InjuryHealingFactor>0.5</InjuryHealingFactor>
-			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<InjuryHealingFactor>4</InjuryHealingFactor>
+			<MentalBreakThreshold>-0.50</MentalBreakThreshold>
+			<PsychicSensitivity>4</PsychicSensitivity>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>150000</WorkToMake>
 			<MaxHitPoints>1200</MaxHitPoints>
-			<MarketValue>6000</MarketValue>
+			<MarketValue>25000</MarketValue>
 			<Mass>11</Mass>
 			<Flammability>0.0</Flammability>
-			<ArmorRating_Sharp>1.50</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.83</ArmorRating_Blunt>
-			<ArmorRating_Heat>1.00</ArmorRating_Heat>
-			<Insulation_Cold>40</Insulation_Cold>
-			<Insulation_Heat>14</Insulation_Heat>
-			<EquipDelay>2</EquipDelay>
-		</statBases>
-		<tickerType>Normal</tickerType>
-		<costList>
-			<ComponentSpacer>10</ComponentSpacer>
-			<GW_ComponentRelic>6</GW_ComponentRelic>
-			<Plasteel>350</Plasteel>
-			<HP_Ceramite>200</HP_Ceramite>
-			<HP_Adamantium>110</HP_Adamantium>
-			<HP_Auramite>50</HP_Auramite>
-		</costList>
-		<apparel>
-			<wornGraphicPath>Things/Apparel/Armor_Guilliman/GuillimanC_torso</wornGraphicPath>
-			<tags>
-				<li>GW_Guilliman</li>
-			</tags>
-		</apparel>
-		<comps>
-			<li Class="CompProperties_Biocodable">
-				<biocodeOnEquip>True</biocodeOnEquip>
-			</li>
-			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
-				<apparelSetEffect>
-					<allApparels>
-						<li>GW_SM_GuillimanBackpack</li>
-						<li>GW_SM_GuillimanHelmet</li>
-						<li>GW_SM_GuillimanShoulderPads</li>
-					</allApparels>
-					<hediff>GW40k_SS_InspiringAura</hediff> -->
-					<!-- <hediff>GW40k_SS_BattleFrenzy_Ranged</hediff> -->
-				<!--</apparelSetEffect>
-			</li>
-		</comps>
-	</ThingDef>
-	
-	<ThingDef ParentName="GW_ScatteredSons_ArmorBase">
-		<defName>GW_SM_ImperialWardenrArmor</defName>
-		<label>imperial Warden armor</label>
-		<description>A replica of the mysterious armor worn by Lion El’Jonson upon his return in the 41st Millennium. It is able to turn away both blade and bullet, and its prodigious size inspires great fear in the enemys hearts. \n\nSpecial security measures are interlaced within the armor’s systems - it cannot be reproduced without them. First, the armor can only be worn by the first person to wear it. Second, the armor will cease functioning if another, identical suit is detected in its vicinity under the same faction - this is an attempt to stop “techno-barbarians” from becoming too powerful. \n\nLion El’Jonson, also known simply as The Lion, is the Primarch of the Dark Angels, a chapter of Space Marines. The Dark Angels were originally a Space Marine Legion, founded on Terra during the Unification Wars - indeed, they were the 1st Legion.</description>
-		<graphicData>
-			<texPath>Things/Apparel/ImperialWardenr/Display/LionW_torso</texPath>
-		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>GW_SM_LionArmor</researchPrerequisite>
-		</recipeMaker>
-		<statBases>
-			<WorkToMake>150000</WorkToMake>
-			<MaxHitPoints>1200</MaxHitPoints>
-			<MarketValue>6000</MarketValue>
-			<Mass>11</Mass>
-			<Flammability>0.0</Flammability>
-			<ArmorRating_Sharp>1.50</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.83</ArmorRating_Blunt>
-			<ArmorRating_Heat>1.00</ArmorRating_Heat>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.75</ArmorRating_Heat>
 			<Insulation_Cold>40</Insulation_Cold>
 			<Insulation_Heat>14</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
@@ -246,21 +250,21 @@
 		<tickerType>Normal</tickerType> 
 		<costList>
 			<ComponentSpacer>10</ComponentSpacer>
-			<GW_ComponentRelic>6</GW_ComponentRelic>
+			<GW_Ruler_Template>1</GW_Ruler_Template>
 			<Plasteel>350</Plasteel>
 			<HP_Ceramite>200</HP_Ceramite>
 			<HP_Adamantium>110</HP_Adamantium>
 			<HP_Auramite>50</HP_Auramite>
 		</costList>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/ImperialWardenr/LionW_torso</wornGraphicPath>
+			<wornGraphicPath>Valdor/GW_HRM_Valdor_ArmorW</wornGraphicPath>
 			<tags>
-				<li>GW_ImperialWardenr</li>
+				<li>GW_ChapterMaster</li>
 			</tags>
 		</apparel>
 		<comps>
 			<li Class="GW4KArmor.CompProperties_TriColorMask">
-				<maskCount>4</maskCount>
+				<maskCount>1</maskCount>
 				<palettePresets>GW_SM_TorsoChapterPalettes</palettePresets>
 				<defaultPalette>
 					<colorA>(250, 176, 67)</colorA>
@@ -271,115 +275,150 @@
 			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
 				<apparelSetEffect>
 					<allApparels>
-						<li>GW_SM_ImperialWardenrBackpack</li>
-						<li>GW_SM_ImperialWardenHelmet</li>
-						<li>GW_SM_ImperialWardenrShoulderPads</li>
+						<li>GW_Rulers_ValdorArmorW</li>
+						<li>GW_Rulers_ValdorShoulderW</li>
+						<li>GW_Rulers_ValdorHelmetW</li>
 					</allApparels>
-					<hediff>GW40k_SS_BattleFrenzy_Melee</hediff>
+					<hediff>GW_Ruler_ValdorShieldBonus</hediff>
 				</apparelSetEffect>
-			</li> -->
-			<!-- <li Class="BM_ApparelSet.CompProperties_ApparelSet"> -->
-				<!-- <apparelSetEffect> -->
-					<!-- <allApparels> -->
-						<!-- <li>GW_SM_ImperialWardenrBackpack</li> -->
-						<!-- <li>GW_SM_ImperialWardenHood</li> -->
-						<!-- <li>GW_SM_ImperialWardenrShoulderPads</li> -->
-					<!-- </allApparels> -->
-					<!-- <hediff>GW40k_SS_BattleFrenzy_Melee</hediff> -->
-				<!-- </apparelSetEffect> -->
-			<!-- </li> -->
-			<!-- <li Class="BM_ApparelSet.CompProperties_ApparelSet"> -->
-				<!-- <apparelSetEffect> -->
-					<!-- <allApparels> -->
-						<!-- <li>GW_SM_ImperialWardenrBackpack</li> -->
-						<!-- <li>GW_SM_ImperialWardenHooded</li> -->
-						<!-- <li>GW_SM_ImperialWardenrShoulderPads</li> -->
-					<!-- </allApparels> -->
-					<!-- <hediff>GW40k_SS_BattleFrenzy_Melee</hediff> -->
-				<!-- </apparelSetEffect> -->
-			<!-- </li> -->
-		<!--</comps>
+			</li>
+		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="GW_ScatteredSons_ArmorBase">
-		<defName>GW_SM_LionArmor</defName>
-		<label>Lion's Armor</label>
-		<description>A replica of the mysterious armor worn by Lion El’Jonson upon his return in the 41st Millennium. It is able to turn away both blade and bullet, and its prodigious size inspires great fear in the enemys hearts. \n\nSpecial security measures are interlaced within the armor’s systems - it cannot be reproduced without them. First, the armor can only be worn by the first person to wear it. Second, the armor will cease functioning if another, identical suit is detected in its vicinity under the same faction - this is an attempt to stop “techno-barbarians” from becoming too powerful. \n\nLion El’Jonson, also known simply as The Lion, is the Primarch of the Dark Angels, a chapter of Space Marines. The Dark Angels were originally a Space Marine Legion, founded on Terra during the Unification Wars - indeed, they were the 1st Legion.</description>
+	<ThingDef ParentName="GW_Rulers_ArmorBase">
+		<defName>GW_Rulers_ValdorArmor</defName>
+		<label>Valdor armor</label>
+		<description>WIP</description>
 		<graphicData>
-			<texPath>Things/Apparel/LionArmor/LionC_torso</texPath>
+			<texPath>Valdor/GW_HRM_Valdor_ArmorC_south</texPath>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>GW_SM_LionArmor</researchPrerequisite>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
 		</recipeMaker>
 		<equippedStatOffsets>
-			<PainShockThreshold>0.1</PainShockThreshold>
-			<MoveSpeed>0.1</MoveSpeed>
+			<InjuryHealingFactor>4</InjuryHealingFactor>
+			<MentalBreakThreshold>-0.50</MentalBreakThreshold>
+			<PsychicSensitivity>4</PsychicSensitivity>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>150000</WorkToMake>
 			<MaxHitPoints>1200</MaxHitPoints>
-			<MarketValue>6000</MarketValue>
+			<MarketValue>25000</MarketValue>
 			<Mass>11</Mass>
 			<Flammability>0.0</Flammability>
-			<ArmorRating_Sharp>1.50</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.83</ArmorRating_Blunt>
-			<ArmorRating_Heat>1.00</ArmorRating_Heat>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.75</ArmorRating_Heat>
 			<Insulation_Cold>40</Insulation_Cold>
 			<Insulation_Heat>14</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
-		<tickerType>Normal</tickerType>
+		<tickerType>Normal</tickerType> 
 		<costList>
 			<ComponentSpacer>10</ComponentSpacer>
-			<GW_ComponentRelic>6</GW_ComponentRelic>
+			<GW_Ruler_Template>1</GW_Ruler_Template>
 			<Plasteel>350</Plasteel>
 			<HP_Ceramite>200</HP_Ceramite>
 			<HP_Adamantium>110</HP_Adamantium>
 			<HP_Auramite>50</HP_Auramite>
 		</costList>
 		<apparel>
-			<wornGraphicPath>Things/Apparel/LionArmor/LionC_torso</wornGraphicPath>
+			<wornGraphicPath>Valdor/GW_HRM_Valdor_ArmorC</wornGraphicPath>
 			<tags>
-				<li>GW_LionArmor</li>
+				<li>GW_ChapterMaster</li>
 			</tags>
 		</apparel>
 		<comps>
-			<li Class="CompProperties_Biocodable">
-				<biocodeOnEquip>True</biocodeOnEquip>
-			</li>
 			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
 				<apparelSetEffect>
 					<allApparels>
-						<li>GW_SM_LionArmorBackpack</li>
-						<li>GW_SM_LionArmorHelmet</li>
-						<li>GW_SM_LionArmorShoulderPads</li>
+						<li>GW_Rulers_ValdorArmor</li>
+						<li>GW_Rulers_ValdorShoulder</li>
+						<li>GW_Rulers_ValdorHelmet</li>
 					</allApparels>
-					<hediff>GW40k_SS_BattleFrenzy_Melee</hediff>
-				</apparelSetEffect>
-			</li>
-			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
-				<apparelSetEffect>
-					<allApparels>
-						<li>GW_SM_LionArmorBackpack</li>
-						<li>GW_SM_LionArmorHood</li>
-						<li>GW_SM_LionArmorShoulderPads</li>
-					</allApparels>
-					<hediff>GW40k_SS_BattleFrenzy_MeleeHood</hediff>
-				</apparelSetEffect>
-			</li>
-			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
-				<apparelSetEffect>
-					<allApparels>
-						<li>GW_SM_LionArmorBackpack</li>
-						<li>GW_SM_LionArmorHooded</li>
-						<li>GW_SM_LionArmorShoulderPads</li>
-					</allApparels>
-					<hediff>GW40k_SS_BattleFrenzy_MeleeHooded</hediff>
+					<hediff>GW_Ruler_ValdorShieldBonus</hediff>
 				</apparelSetEffect>
 			</li>
 		</comps>
-	</ThingDef> --> 
-
+	</ThingDef>
+	
+	<ThingDef ParentName="GW_Rulers_ArmorBase">
+		<defName>GW_Rulers_MalcadorOutfit</defName>
+		<label>Malcador armor</label>
+		<description>WIP</description>
+		<graphicData>
+			<texPath>Malcador/Apparel/GW_HRM_MalcadorRobe_Male_south</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<InjuryHealingFactor>4</InjuryHealingFactor>
+			<MentalBreakThreshold>-0.50</MentalBreakThreshold>
+			<PsychicSensitivity>4</PsychicSensitivity>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>150000</WorkToMake>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<MarketValue>25000</MarketValue>
+			<Mass>11</Mass>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.75</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>14</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<tickerType>Normal</tickerType> 
+		<costList>
+			<ComponentSpacer>10</ComponentSpacer>
+			<GW_Ruler_Template>1</GW_Ruler_Template>
+			<Plasteel>350</Plasteel>
+			<HP_Ceramite>200</HP_Ceramite>
+			<HP_Adamantium>110</HP_Adamantium>
+			<HP_Auramite>50</HP_Auramite>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Malcador/Apparel/GW_HRM_MalcadorRobe</wornGraphicPath>
+			<tags>
+				<li>GW_ChapterMaster</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
+				<apparelSetEffect>
+					<allApparels>
+						<li>GW_Rulers_MalcadorOutfit</li>
+						<li>GW_Rulers_MalcadorHelmet</li>
+					</allApparels>
+					<hediff>GW_Ruler_MalcadorBonus</hediff>
+				</apparelSetEffect>
+			</li>
+		</comps>
+		<modExtensions Inherit="false">
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="ceteam.combatextended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+						<parts>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+						<parts>
+							<li>Hand</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
 	<ThingDef Abstract="true" Name="GW_SM_ArmorBase" ParentName="ArmorMachineableBase">
         <techLevel>Spacer</techLevel>
 		<recipeMaker>
@@ -388,7 +427,7 @@
 				<Crafting>15</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="false">
-				<li>GW_SM_ArmorBench</li>
+				<li>GW_Autoforge</li>
 			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
@@ -482,15 +521,15 @@
 
 
 
-<ThingDef Name="GW_SM_GravisArmorBase" ParentName="GW_SM_ArmorBase">
+	<ThingDef Name="GW_SM_GravisArmorBase" ParentName="GW_SM_ArmorBase">
         <defName>GW_HRM_LOTD</defName>
 		<label>Gravis power armor (Lotd)</label>
         	<description>A heavyweight suit of Power Armor, of the Mk X Gravis pattern. A cut above standard Tacticus armor, it allows the wearer to take more fire than normal while responding in kind. \n\nThe heavyweight Aggressors, the plasma-wielding Eradicators, and some officers of the Primaris Space Marines all wear this armor. Inceptors, wearing jump-packs, also use this armor to great effect, compensating for lower mobility with the power to leap long distances.</description>
 		<graphicData>
-			<texPath>Firstborn/LOTDFirstBorn_Brother_East</texPath>
+			<texPath>Firstborn/Shell/LOTDFirstBorn</texPath>
 		</graphicData>
 		<recipeMaker>
-            <researchPrerequisite>GW_SM_AstartesHeavy</researchPrerequisite>
+            <researchPrerequisite>Fabrication</researchPrerequisite>
         </recipeMaker>
         <statBases>
 			<WorkToMake>80000</WorkToMake>
@@ -530,4 +569,5 @@
 			</tags>
 		</apparel>
     </ThingDef>
+	
 </Defs>

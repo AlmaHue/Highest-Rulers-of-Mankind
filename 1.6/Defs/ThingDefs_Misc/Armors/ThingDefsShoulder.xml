@@ -1,0 +1,277 @@
+<Defs>
+
+	<ThingDef Abstract="true" Name="GW_Rulers_ShoulderBase" ParentName="ArmorMachineableBase">
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>20</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="false">
+				<li>GW_Autoforge</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconScale>1.6</uiIconScale>
+		<equippedStatOffsets>
+			<PawnBeauty>50</PawnBeauty>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>GW_ArmorShoulderPad</li>
+		</thingCategories>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>75</layer> <!--70-77 is over helmet and under gun-->
+				</defaultData>
+                <scale>1.1</scale>
+                <childScale>1.1</childScale>
+            </drawData>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li MayRequire="ceteam.combatextended">Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>GW_Shoulder</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>PrestigeCombatGear</li>
+			</defaultOutfitTags>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="ceteam.combatextended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+						<parts>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+						<parts>
+							<li>Hand</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<isUnifiedApparel>true</isUnifiedApparel>
+				<hideHead>false</hideHead>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="GW_Rulers_ShoulderBase">
+		<defName>GW_Rulers_EmperorShoulderW</defName>
+		<label>Beta Emperor shoulder(W)</label>
+		<description>WIP.</description>
+		<graphicData>
+			<texPath>Emperor/Shoulders/GW_HRM_Emperor_ShouldersW</texPath>
+		</graphicData>
+		<recipeMaker>
+            <researchPrerequisite>Fabrication</researchPrerequisite>
+        </recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<MaxHitPoints>480</MaxHitPoints>
+			<MarketValue>700</MarketValue>
+			<Mass>3</Mass>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.32</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</equippedStatOffsets>
+		<costList>
+			<GW_Ruler_Template>1</GW_Ruler_Template>
+			<Plasteel>190</Plasteel>
+			<Steel>240</Steel>
+			<HP_Ceramite>140</HP_Ceramite>
+			<HP_Auramite>5</HP_Auramite>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Emperor/Shoulders/GW_HRM_Emperor_ShouldersW</wornGraphicPath>
+			<tags>
+				<li>GW_Custodes</li>
+				<li>GW_CustodesGuard</li>
+			</tags>
+			<drawData>
+				<scale>1.1</scale>
+            </drawData>
+		</apparel>
+		<comps>
+			<li Class="GW4KArmor.CompProperties_TriColorMask">
+				<maskCount>1</maskCount>
+				<palettePresets>GW_CS_ShoulderChapterPalettesCustodes</palettePresets>
+				<defaultPalette>
+					<colorA>(250, 176, 67)</colorA>
+					<colorB>(250, 176, 67)</colorB>
+					<colorC>(180, 65, 74)</colorC>
+				</defaultPalette>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="GW_Rulers_ShoulderBase">
+		<defName>GW_Rulers_EmperorShoulder</defName>
+		<label>Beta Emperor shoulder</label>
+		<description>WIP.</description>
+		<graphicData>
+			<texPath>Emperor/Shoulders/GW_HRM_Emperor_ShouldersC</texPath>
+		</graphicData>
+		<recipeMaker>
+            <researchPrerequisite>Fabrication</researchPrerequisite>
+        </recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<MaxHitPoints>480</MaxHitPoints>
+			<MarketValue>700</MarketValue>
+			<Mass>3</Mass>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.32</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</equippedStatOffsets>
+		<costList>
+			<GW_Ruler_Template>1</GW_Ruler_Template>
+			<Plasteel>190</Plasteel>
+			<Steel>240</Steel>
+			<HP_Ceramite>140</HP_Ceramite>
+			<HP_Auramite>5</HP_Auramite>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Emperor/Shoulders/GW_HRM_Emperor_ShouldersC</wornGraphicPath>
+			<tags>
+				<li>GW_Custodes</li>
+				<li>GW_CustodesGuard</li>
+			</tags>
+			<drawData>
+				<scale>1.1</scale>
+            </drawData>
+		</apparel>
+		<comps>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="GW_Rulers_ShoulderBase">
+		<defName>GW_Rulers_ValdorShoulderW</defName>
+		<label>Valdor's shoulder(W)</label>
+		<description>WIP.</description>
+		<graphicData>
+			<texPath>Valdor/Shoulders/GW_HRM_Valdor_ShouldersW</texPath>
+		</graphicData>
+		<recipeMaker>
+            <researchPrerequisite>Fabrication</researchPrerequisite>
+        </recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<MaxHitPoints>480</MaxHitPoints>
+			<MarketValue>700</MarketValue>
+			<Mass>3</Mass>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.32</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</equippedStatOffsets>
+		<costList>
+			<GW_Ruler_Template>1</GW_Ruler_Template>
+			<Plasteel>190</Plasteel>
+			<Steel>240</Steel>
+			<HP_Ceramite>140</HP_Ceramite>
+			<HP_Auramite>5</HP_Auramite>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Valdor/Shoulders/GW_HRM_Valdor_ShouldersW</wornGraphicPath>
+			<tags>
+				<li>GW_Custodes</li>
+			</tags>
+			<drawData>
+				<scale>1.1</scale>
+            </drawData>
+		</apparel>
+		<comps>
+			<li Class="GW4KArmor.CompProperties_TriColorMask">
+				<maskCount>1</maskCount>
+				<palettePresets>GW_CS_ShoulderChapterPalettesCustodes</palettePresets>
+				<defaultPalette>
+					<colorA>(250, 176, 67)</colorA>
+					<colorB>(250, 176, 67)</colorB>
+					<colorC>(180, 65, 74)</colorC>
+				</defaultPalette>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="GW_Rulers_ShoulderBase">
+		<defName>GW_Rulers_ValdorShoulder</defName>
+		<label>Valdor's shoulder</label>
+		<description>WIP.</description>
+		<graphicData>
+			<texPath>Valdor/Shoulders/GW_HRM_Valdor_ShouldersC</texPath>
+		</graphicData>
+		<recipeMaker>
+            <researchPrerequisite>Fabrication</researchPrerequisite>
+        </recipeMaker>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<MaxHitPoints>480</MaxHitPoints>
+			<MarketValue>700</MarketValue>
+			<Mass>3</Mass>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.32</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</equippedStatOffsets>
+		<costList>
+			<GW_Ruler_Template>1</GW_Ruler_Template>
+			<Plasteel>190</Plasteel>
+			<Steel>240</Steel>
+			<HP_Ceramite>140</HP_Ceramite>
+			<HP_Auramite>5</HP_Auramite>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Valdor/Shoulders/GW_HRM_Valdor_ShouldersC</wornGraphicPath>
+			<tags>
+				<li>GW_Custodes</li>
+			</tags>
+			<drawData>
+				<scale>1.1</scale>
+            </drawData>
+		</apparel>
+		<comps>
+		</comps>
+	</ThingDef>
+
+</Defs>

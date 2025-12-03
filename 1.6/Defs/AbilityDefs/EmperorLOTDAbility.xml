@@ -6,24 +6,26 @@
         
         
         <description>Summons a member of the legion of the damned to fight for you.</description>
+        <!-- Placeholder icon path -->
+        <iconPath>Emperor/Headgear/GW_HRM_Emperor_LaurelsAura</iconPath> 
         
-        <iconPath>UI/Abilities/AbilityIcon</iconPath> <!-- Placeholder icon path -->
         
-        
-        <cooldownTicks>72000</cooldownTicks>
+        <cooldownTicksRange>72000</cooldownTicksRange>
         
     
         <comps>
-            <li Class="YourModNamespace.CompProperties_CompAbilityEffect_EmperorLOTD"/>
+			<li>
+				<compClass>gwrulers.CompAbilityEffect_EmperorLOTD</compClass>
+			</li>
         </comps>
-        
+        <targetRequired>True</targetRequired>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <label>Summon</label>
-            <hastarget>True</hastarget>
-            <targetWorldMap>False</targetWorldMap>
+            <!-- <hastarget>True</hastarget> -->
+            <!-- <targetWorldMap>False</targetWorldMap> -->
             <range>80</range>
-            <warmupTicks>60</warmupTicks>
+            <warmupTime>60</warmupTime>
             <burstShotCount>1</burstShotCount>
             <soundCast>ChargeBlaster</soundCast> <!-- Placeholder sound -->
             <requireLineOfSight>True</requireLineOfSight>
@@ -31,7 +33,7 @@
                 <canTargetAnimals>False</canTargetAnimals>
                 <canTargetPawns>False</canTargetPawns>
                 <canTargetBuildings>False</canTargetBuildings>
-                <canTargetCells>True</canTargetCells>
+                <canTargetLocations>True</canTargetLocations>
             </targetParams>
         </verbProperties>
     </AbilityDef>

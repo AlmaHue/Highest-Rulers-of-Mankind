@@ -1,0 +1,33 @@
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+        <defName>GW_Ruler_Template</defName>
+        <label>template component</label>
+        <description>WIP.</description>
+        <graphicData>
+            <texPath>Things/Resource/RelicComponent</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <MarketValue>3500</MarketValue>
+            <Mass>1</Mass>
+            <Flammability>0.3</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>GW_Exotic</li>
+        </tradeTags>
+        <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+        <allowedArchonexusCount>5</allowedArchonexusCount>
+    </ThingDef>
+
+</Defs>
