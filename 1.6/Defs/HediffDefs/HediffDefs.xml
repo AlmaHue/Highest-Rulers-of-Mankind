@@ -45,7 +45,11 @@
 				</drawData>
 			</li>
 		</renderNodeProperties>
+    <abilities>
+      <li>EmperorLOTDAbility</li>
+    </abilities>
 		<comps>
+			<li Class="gwrulers.HediffCompProperties_AbilitiesStartWithCooldown" />
 			<li Class="GW40kHediffAura.HediffCompProperties_AuraAndMote">
 				<ownerFactionHediff>GW40k_SS_InspiringAura_Reciever</ownerFactionHediff>
 				<affectWearer>false</affectWearer>
@@ -113,6 +117,72 @@
 		</stages>
 		<comps>
 		
+		</comps>
+	</HediffDef>
+  
+	<HediffDef>
+		<defName>GW_Ruler_EmperorLOTD_24Hours</defName>
+		<label>emperor LOTD</label>
+		<description>Will only stay around for 24 hours.</description>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+        <!-- <becomeVisible>false</becomeVisible> -->
+			</li>
+		</stages>
+		<comps>
+      <li Class="gwrulers.HediffCompProperties_DespawnAfterHediffRemoved"/>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>60000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+		</comps>
+	</HediffDef>
+  
+	<HediffDef>
+		<defName>GW_Ruler_EmperorLOTD_12Hours</defName>
+		<label>emperor LOTD</label>
+		<description>Will only stay around for 12 hours.</description>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+        <!-- <becomeVisible>false</becomeVisible> -->
+			</li>
+		</stages>
+		<comps>
+      <li Class="gwrulers.HediffCompProperties_DespawnAfterHediffRemoved"/>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>30000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+		</comps>
+	</HediffDef>
+  
+	<HediffDef>
+		<defName>GW_Ruler_EmperorLOTD_6Hours</defName>
+		<label>emperor LOTD</label>
+		<description>Will only stay around for 6 hours.</description>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+        <!-- <becomeVisible>false</becomeVisible> -->
+			</li>
+		</stages>
+		<comps>
+      <li Class="gwrulers.HediffCompProperties_DespawnAfterHediffRemoved"/>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>15000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
 		</comps>
 	</HediffDef>
 

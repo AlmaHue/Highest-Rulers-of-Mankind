@@ -11,28 +11,31 @@
         
         
         <cooldownTicksRange>72000</cooldownTicksRange>
+        <displayOrder>300</displayOrder>
+        
+        <!-- <cooldownPerCharge>true</cooldownPerCharge> -->
+        <!-- <charges>1</charges> -->
         
     
         <comps>
-			<li>
-				<compClass>gwrulers.CompAbilityEffect_EmperorLOTD</compClass>
-			</li>
+            <li Class="gwrulers.CompProperties_AbilityEmperorLOTD" />
         </comps>
+        
         <targetRequired>True</targetRequired>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
-            <label>Summon</label>
+            <!-- <label>Summon</label> -->
             <!-- <hastarget>True</hastarget> -->
             <!-- <targetWorldMap>False</targetWorldMap> -->
             <range>80</range>
-            <warmupTime>60</warmupTime>
-            <burstShotCount>1</burstShotCount>
+            <warmupTime>0.25</warmupTime>
+            <!-- <burstShotCount>1</burstShotCount> -->
             <soundCast>ChargeBlaster</soundCast> <!-- Placeholder sound -->
             <requireLineOfSight>True</requireLineOfSight>
             <targetParams>
-                <canTargetAnimals>False</canTargetAnimals>
-                <canTargetPawns>False</canTargetPawns>
-                <canTargetBuildings>False</canTargetBuildings>
+                <!-- <canTargetAnimals>False</canTargetAnimals> -->
+                <!-- <canTargetPawns>False</canTargetPawns> -->
+                <!-- <canTargetBuildings>False</canTargetBuildings> -->
                 <canTargetLocations>True</canTargetLocations>
             </targetParams>
         </verbProperties>
