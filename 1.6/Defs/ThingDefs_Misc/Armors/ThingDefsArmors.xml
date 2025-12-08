@@ -261,6 +261,9 @@
 			<tags>
 				<li>GW_ChapterMaster</li>
 			</tags>
+			<drawData>
+				<scale>1.3</scale>
+			</drawData>
 		</apparel>
 		<comps>
 			<li Class="GW4KArmor.CompProperties_TriColorMask">
@@ -327,6 +330,9 @@
 			<tags>
 				<li>GW_ChapterMaster</li>
 			</tags>
+			<drawData>
+				<scale>1.3</scale>
+			</drawData>
 		</apparel>
 		<comps>
 			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
