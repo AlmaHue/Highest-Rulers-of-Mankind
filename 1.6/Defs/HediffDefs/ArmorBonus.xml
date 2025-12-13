@@ -76,27 +76,27 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-		  <li Class="VEF.Hediffs.HediffCompProperties_Shield">
-                <compClass>VEF.Hediffs.HediffComp_Shield</compClass>
-                <graphic>
-                    <texPath>Other/ShieldBubble</texPath>
-                    <drawSize>(2, 2)</drawSize>
-                    <graphicClass>Graphic_Single</graphicClass>
-                    <shaderType>MoteGlow</shaderType>
-                </graphic>
-				<maxEnergy>100</maxEnergy>
-				<energyLossPerDamage>0.033</energyLossPerDamage>
-				<energyPerTick>0.1</energyPerTick>
-				<rechargeDelay>60</rechargeDelay>
-                <absorbAttackType>Both</absorbAttackType>
-                <sustainer>BulletShield_Ambience</sustainer>
-                <soundEnded>EnergyShield_Broken</soundEnded>
-                <doDust>false</doDust>
-                <absorbedFleck>ExplosionFlash</absorbedFleck>
-                <damageOnAttack>Melee</damageOnAttack>
-                <damageType>Flame</damageType>
-                <damageAmount>3</damageAmount>
-            </li>
+		  <!-- <li Class="VEF.Hediffs.HediffCompProperties_Shield"> -->
+                <!-- <compClass>VEF.Hediffs.HediffComp_Shield</compClass> -->
+                <!-- <graphic> -->
+                    <!-- <texPath>Other/ShieldBubble</texPath> -->
+                    <!-- <drawSize>(2, 2)</drawSize> -->
+                    <!-- <graphicClass>Graphic_Single</graphicClass> -->
+                    <!-- <shaderType>MoteGlow</shaderType> -->
+                <!-- </graphic> -->
+				<!-- <maxEnergy>100</maxEnergy> -->
+				<!-- <energyLossPerDamage>0.033</energyLossPerDamage> -->
+				<!-- <energyPerTick>0.1</energyPerTick> -->
+				<!-- <rechargeDelay>60</rechargeDelay> -->
+                <!-- <absorbAttackType>Both</absorbAttackType> -->
+                <!-- <sustainer>BulletShield_Ambience</sustainer> -->
+                <!-- <soundEnded>EnergyShield_Broken</soundEnded> -->
+                <!-- <doDust>false</doDust> -->
+                <!-- <absorbedFleck>ExplosionFlash</absorbedFleck> -->
+                <!-- <damageOnAttack>Melee</damageOnAttack> -->
+                <!-- <damageType>Flame</damageType> -->
+                <!-- <damageAmount>3</damageAmount> -->
+            <!-- </li> -->
 		</comps>
 	</HediffDef>
 
