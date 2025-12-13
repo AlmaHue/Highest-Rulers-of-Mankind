@@ -116,7 +116,33 @@
 			</li>
 		</stages>
 		<comps>
-		
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>GW_Ruler_MalcadorAbility</abilityDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>GW_Ruler_MalcadorDebuff</defName>
+		<label>malcador debuff</label>
+		<description>WIP.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
 		</comps>
 	</HediffDef>
 
