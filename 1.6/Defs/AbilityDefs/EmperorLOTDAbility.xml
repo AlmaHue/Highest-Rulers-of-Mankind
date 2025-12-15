@@ -1,20 +1,20 @@
 <Defs>
-    <AbilityDef>
-        <defName>EmperorLOTDAbility</defName>
+	<AbilityDef>
+		<defName>EmperorLOTDAbility</defName>
         
-        <label>The Legion Beckons</label>
-        
-        
-        <description>Summon a member of the Legion of the Damned to fight for you.</description>
-        <!-- Placeholder icon path -->
-        <iconPath>Emperor/Headgear/GW_HRM_Emperor_LaurelsAura</iconPath> 
+		<label>The Legion Beckons</label>
         
         
-        <cooldownTicksRange>72000</cooldownTicksRange>
-        <displayOrder>300</displayOrder>
+		<description>Summon a member of the Legion of the Damned to fight for you.</description>
+		<!-- Placeholder icon path -->
+		<iconPath>Emperor/Headgear/GW_HRM_Emperor_LaurelsAura</iconPath>
         
-        <!-- <cooldownPerCharge>true</cooldownPerCharge> -->
-        <!-- <charges>1</charges> -->
+        
+		<cooldownTicksRange>72000</cooldownTicksRange>
+		<displayOrder>300</displayOrder>
+        
+		<!-- <cooldownPerCharge>true</cooldownPerCharge> -->
+		<!-- <charges>1</charges> -->
         
     
         <comps>

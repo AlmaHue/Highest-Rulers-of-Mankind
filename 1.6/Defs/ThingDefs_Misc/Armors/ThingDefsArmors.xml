@@ -315,6 +315,8 @@
 			<Insulation_Cold>40</Insulation_Cold>
 			<Insulation_Heat>14</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
+			<EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>
 		</statBases>
 		<tickerType>Normal</tickerType> 
 		<costList>
@@ -345,6 +347,14 @@
 					<hediff>GW_Ruler_ValdorShieldBonus</hediff>
 				</apparelSetEffect>
 			</li>
+			<li Class="CompProperties_Shield">
+				<startingTicksToReset>3200</startingTicksToReset>
+				<minDrawSize>1.2</minDrawSize>
+				<maxDrawSize>1.55</maxDrawSize>
+				<energyLossPerDamage>0.033</energyLossPerDamage>
+				<energyOnReset>0.2</energyOnReset>
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li>	
 		</comps>
 	</ThingDef>
 	
