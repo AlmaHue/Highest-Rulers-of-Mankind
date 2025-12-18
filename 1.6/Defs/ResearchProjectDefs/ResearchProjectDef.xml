@@ -7,7 +7,7 @@
 		<prerequisites>
 			<li>GW_Cogitator</li>
 		</prerequisites>
-		<researchViewX>1.00</researchViewX>
+		<researchViewX>3.00</researchViewX>
 		<researchViewY>0.00</researchViewY>
         <baseCost>8000</baseCost>
         <modExtensions>
@@ -23,6 +23,7 @@
         </modExtensions>
 	</ResearchProjectDef>
 
+
 	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_Rulers_OneTrueArmor</defName>
 		<label>one true armor</label>
@@ -30,8 +31,8 @@
 		<prerequisites>
 			<li>GW_Rulers_MasterForge</li>
 		</prerequisites>
-		<researchViewX>1.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>1.30</researchViewY>
         <baseCost>8000</baseCost>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
@@ -53,8 +54,8 @@
 		<prerequisites>
 			<li>GW_Rulers_MasterForge</li>
 		</prerequisites>
-		<researchViewX>1.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.50</researchViewY>
         <baseCost>8000</baseCost>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
@@ -76,8 +77,8 @@
 		<prerequisites>
 			<li>GW_Rulers_MasterForge</li>
 		</prerequisites>
-		<researchViewX>1.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
         <baseCost>8000</baseCost>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
