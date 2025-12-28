@@ -61,7 +61,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_HelmetBase">
 		<defName>GW_Rulers_EmperorHelmetW</defName>
-		<label>Beta Emperor helmet(W)</label>
+		<label>Emperor laurels (W)</label>
 		<description>WIP.</description>
 		<graphicData>
 			<texPath>Emperor/Headgear/GW_HRM_Emperor_LaurelsW</texPath>
@@ -136,7 +136,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_HelmetBase">
 		<defName>GW_Rulers_EmperorHelmet</defName>
-		<label>Beta Emperor helmet</label>
+		<label>Emperor laurels</label>
 		<description>WIP.</description>
 		<graphicData>
 			<texPath>Emperor/Headgear/GW_HRM_Emperor_LaurelsC</texPath>
@@ -199,7 +199,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_HelmetBase">
 		<defName>GW_Rulers_ValdorHelmetW</defName>
-		<label>Valdor helmet(W)</label>
+		<label>Valdor helmet (W)</label>
 		<description>WIP.</description>
 		<graphicData>
 			<texPath>Valdor/Headgear/GW_HRM_Valdor_HelmetW_south</texPath>
@@ -334,7 +334,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_HelmetBase">
 		<defName>GW_Rulers_MalcadorHelmet</defName>
-		<label>Malcador helmet</label>
+		<label>Malcador hood</label>
 		<description>WIP.</description>
 		<graphicData>
 			<texPath>Malcador/Headgear/GW_HRM_Malcador_Hood_south</texPath>

@@ -99,7 +99,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_ArmorBase">
 		<defName>GW_Rulers_EmperorArmorW</defName>
-		<label>Beta Emperor armor(W)</label>
+		<label>Emperor armor (W)</label>
 		<description>BETA BETA BETA BETA</description>
 		<graphicData>
 			<texPath>Emperor/GW_HRM_Emperor_ArmorW_south</texPath>
@@ -163,7 +163,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_ArmorBase">
 		<defName>GW_Rulers_EmperorArmor</defName>
-		<label>Beta Emperor armor</label>
+		<label>Emperor armor</label>
 		<description>BETA BETA BETA BETA</description>
 		<graphicData>
 			<texPath>Emperor/GW_HRM_Emperor_ArmorC_south</texPath>
@@ -218,7 +218,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_ArmorBase">
 		<defName>GW_Rulers_ValdorArmorW</defName>
-		<label>Valdor armor(W)</label>
+		<label>Valdor armor (W)</label>
 		<description>WIP</description>
 		<graphicData>
 			<texPath>Valdor/GW_HRM_Valdor_ArmorW_south</texPath>
@@ -363,7 +363,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_ArmorBase">
 		<defName>GW_Rulers_MalcadorOutfit</defName>
-		<label>Malcador armor</label>
+		<label>Malcador robes</label>
 		<description>WIP</description>
 		<graphicData>
 			<texPath>Malcador/Apparel/GW_HRM_MalcadorRobe_Male_south</texPath>

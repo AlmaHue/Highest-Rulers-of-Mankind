@@ -2,13 +2,13 @@
 
 	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_Rulers_MasterForge</defName>
-		<label>master of mankine forge</label>
+		<label>Vulcan`s autoforge</label>
         <description>WIP.</description>
 		<prerequisites>
 			<li>GW_Cogitator</li>
 		</prerequisites>
-		<researchViewX>3.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
+            <researchViewX>9.00</researchViewX>
+            <researchViewY>3.40</researchViewY>
         <baseCost>8000</baseCost>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
@@ -26,14 +26,14 @@
 
 	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_Rulers_OneTrueArmor</defName>
-		<label>one true armor</label>
+		<label>One true armor</label>
         <description>WIP.</description>
 		<prerequisites>
 			<li>GW_Rulers_MasterForge</li>
 		</prerequisites>
-		<researchViewX>4.00</researchViewX>
-		<researchViewY>1.30</researchViewY>
-        <baseCost>8000</baseCost>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>3.80</researchViewY>
+        <baseCost>9000</baseCost>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
                 <StudyLocation>GW_Cogitator</StudyLocation>
@@ -49,13 +49,13 @@
 
 	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_Rulers_FirstCaptainr</defName>
-		<label>first capitan general</label>
+		<label>First capitan general</label>
         <description>WIP.</description>
 		<prerequisites>
 			<li>GW_Rulers_MasterForge</li>
 		</prerequisites>
-		<researchViewX>4.00</researchViewX>
-		<researchViewY>0.50</researchViewY>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>3.30</researchViewY>
         <baseCost>8000</baseCost>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
@@ -72,13 +72,13 @@
 
 	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
 		<defName>GW_Rulers_EmperorRightHand</defName>
-		<label>emperor's right hand</label>
+		<label>Emperor's right hand</label>
         <description>WIP.</description>
 		<prerequisites>
 			<li>GW_Rulers_MasterForge</li>
 		</prerequisites>
-		<researchViewX>4.00</researchViewX>
-		<researchViewY>2.00</researchViewY>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>4.30</researchViewY>
         <baseCost>8000</baseCost>
         <modExtensions>
             <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">

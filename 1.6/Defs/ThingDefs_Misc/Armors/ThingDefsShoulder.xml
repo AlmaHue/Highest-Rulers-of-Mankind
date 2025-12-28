@@ -77,7 +77,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_ShoulderBase">
 		<defName>GW_Rulers_EmperorShoulderW</defName>
-		<label>Beta Emperor shoulder(W)</label>
+		<label>Emperor shoulder (W)</label>
 		<description>WIP.</description>
 		<graphicData>
 			<texPath>Emperor/Shoulders/GW_HRM_Emperor_ShouldersW</texPath>
@@ -133,7 +133,7 @@
 	
 	<ThingDef ParentName="GW_Rulers_ShoulderBase">
 		<defName>GW_Rulers_EmperorShoulder</defName>
-		<label>Beta Emperor shoulder</label>
+		<label>Emperor shoulder</label>
 		<description>WIP.</description>
 		<graphicData>
 			<texPath>Emperor/Shoulders/GW_HRM_Emperor_ShouldersC</texPath>

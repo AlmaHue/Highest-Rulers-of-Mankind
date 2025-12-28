@@ -884,8 +884,8 @@
   
   <RecipeDef>
     <defName>Auto_GW_Rulers_EmperorArmorW</defName>
-    <label>make beta emperor armor(W)</label>
-    <description>Make a beta emperor armor(W).</description>
+    <label>make emperor armor(W)</label>
+    <description>Make a emperor armor(W).</description>
     <jobString>loading autoforge.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <!-- <effectWorking>Cook</effectWorking> -->
@@ -961,8 +961,8 @@
   
   <RecipeDef>
     <defName>Auto_GW_Rulers_EmperorArmor</defName>
-    <label>make beta emperor armor</label>
-    <description>Make a beta emperor armor.</description>
+    <label>make emperor armor</label>
+    <description>Make a emperor armor.</description>
     <jobString>loading autoforge.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <!-- <effectWorking>Cook</effectWorking> -->
@@ -1269,8 +1269,8 @@
   
   <RecipeDef>
     <defName>Auto_GW_Rulers_EmperorHelmetW</defName>
-    <label>make beta emperor helmet(W)</label>
-    <description>Make a beta emperor helmet(W).</description>
+    <label>make emperor laurels (W)</label>
+    <description>Make a emperor laurels (W).</description>
     <jobString>loading autoforge.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <!-- <effectWorking>Cook</effectWorking> -->
@@ -1336,8 +1336,8 @@
   
   <RecipeDef>
     <defName>Auto_GW_Rulers_EmperorHelmet</defName>
-    <label>make beta emperor helmet</label>
-    <description>Make a beta emperor helmet.</description>
+    <label>make emperor laurels</label>
+    <description>Make a emperor laurels.</description>
     <jobString>loading autoforge.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <!-- <effectWorking>Cook</effectWorking> -->
@@ -1604,8 +1604,8 @@
   
   <RecipeDef>
     <defName>Auto_GW_Rulers_EmperorShoulderW</defName>
-    <label>make beta emperor shoulder(W)</label>
-    <description>Make a beta emperor shoulder(W).</description>
+    <label>make emperor shoulder(W)</label>
+    <description>Make a emperor shoulder(W).</description>
     <jobString>loading autoforge.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <!-- <effectWorking>Cook</effectWorking> -->
@@ -1671,8 +1671,8 @@
   
   <RecipeDef>
     <defName>Auto_GW_Rulers_EmperorShoulder</defName>
-    <label>make beta emperor shoulder</label>
-    <description>Make a beta emperor shoulder.</description>
+    <label>make emperor shoulder</label>
+    <description>Make a emperor shoulder.</description>
     <jobString>loading autoforge.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <!-- <effectWorking>Cook</effectWorking> -->
