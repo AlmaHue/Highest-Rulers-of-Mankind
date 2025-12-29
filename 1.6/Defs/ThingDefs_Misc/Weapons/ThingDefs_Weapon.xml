@@ -97,9 +97,6 @@
 			</li>
 			<!-- <li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit"></li> -->
 		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -211,9 +208,6 @@
 			</li>
 			<!-- <li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit"></li> -->
 		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -244,6 +238,7 @@
 		</costList>
 		<stuffCategories Inherit="False" IsNull="True"/>
 		<costStuffCount/>
+		<equippedAngleOffset>-45</equippedAngleOffset>
 		<tradeability>Sellable</tradeability>
 		<uiIconScale>1.2</uiIconScale>
 		<smeltable>false</smeltable>
@@ -334,9 +329,6 @@
 			</li>
 			<!-- <li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit"></li> -->
 		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>GW_Rulers_GuardianSpearBolterProjectile</defName>
@@ -396,6 +388,7 @@
 		<tradeability>Sellable</tradeability>
 		<uiIconScale>1.2</uiIconScale>
 		<smeltable>false</smeltable>
+		<equippedAngleOffset>45</equippedAngleOffset>
 		<burnableByRecipe>false</burnableByRecipe>
 		<statBases>
 			<MaxHitPoints>5000</MaxHitPoints>
@@ -406,6 +399,8 @@
 		<equippedStatOffsets>
 			<MoveSpeed>0.50</MoveSpeed>
 			<Beauty>10</Beauty>
+			<PsychicSensitivityOffset MayRequire="ludeon.rimworld.royality">0.15</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate MayRequire="ludeon.rimworld.royality">0.066</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<techLevel>Archotech</techLevel>
 		<relicChance>3</relicChance>
@@ -482,9 +477,6 @@
 			</li>
 			<!-- <li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit"></li> -->
 		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -619,9 +611,6 @@
 			</li>
 			<!-- <li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit"></li> -->
 		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
 	</ThingDef>
 	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>GW_Bullet_PsychicFlamer</defName>
