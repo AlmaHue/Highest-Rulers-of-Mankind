@@ -315,6 +315,24 @@
 				<armorPenetration>0.13</armorPenetration>
 			</li>
 		</tools>
+				<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<angleOffset>-60</angleOffset>
+					</north>
+					<east>
+						<angleOffset>-60</angleOffset>
+					</east>
+					<south>
+						<angleOffset>-60</angleOffset>
+					</south>
+					<west>
+						<angleOffset>-60</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
@@ -390,6 +408,24 @@
                 <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
+				<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<angleOffset>-60</angleOffset>
+					</north>
+					<east>
+						<angleOffset>-60</angleOffset>
+					</east>
+					<south>
+						<angleOffset>-60</angleOffset>
+					</south>
+					<west>
+						<angleOffset>-60</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
     </ThingDef>
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
@@ -460,5 +496,23 @@
 				<armorPenetration>0.13</armorPenetration>
 			</li>
 		</tools>
+				<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<angleOffset>-60</angleOffset>
+					</north>
+					<east>
+						<angleOffset>-60</angleOffset>
+					</east>
+					<south>
+						<angleOffset>-60</angleOffset>
+					</south>
+					<west>
+						<angleOffset>-60</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

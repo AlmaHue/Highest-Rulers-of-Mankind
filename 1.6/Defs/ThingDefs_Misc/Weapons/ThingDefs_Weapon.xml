@@ -51,7 +51,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.50</MoveSpeed>
-			<Beauty>150</Beauty>
+			<Beauty>10</Beauty>
 		</equippedStatOffsets>
 		<techLevel>Archotech</techLevel>
 		<relicChance>3</relicChance>
@@ -152,7 +152,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.50</MoveSpeed>
-			<Beauty>150</Beauty>
+			<Beauty>10</Beauty>
 		</equippedStatOffsets>
 		<techLevel>Archotech</techLevel>
 		<relicChance>3</relicChance>
@@ -261,7 +261,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.50</MoveSpeed>
-			<Beauty>150</Beauty>
+			<Beauty>10</Beauty>
 		</equippedStatOffsets>
 		<techLevel>Archotech</techLevel>
 		<relicChance>3</relicChance>
@@ -405,7 +405,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.50</MoveSpeed>
-			<Beauty>150</Beauty>
+			<Beauty>10</Beauty>
 		</equippedStatOffsets>
 		<techLevel>Archotech</techLevel>
 		<relicChance>3</relicChance>
@@ -526,8 +526,8 @@
 			<MarketValue>4000</MarketValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.50</MoveSpeed>
-			<Beauty>150</Beauty>
+			<MoveSpeed>0.70</MoveSpeed>
+			<Beauty>10</Beauty>
 		</equippedStatOffsets>
 		<techLevel>Archotech</techLevel>
 		<relicChance>3</relicChance>
