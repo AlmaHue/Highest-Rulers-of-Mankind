@@ -325,10 +325,10 @@
 			<li Class="WeaponSwitch.CompProperties_SwitchWeapon">
 				<weaponsToSwitch>
 					<li>
-						<label>Ranged</label>
+						<label>Melee</label>
 						<description>Swap to Melee</description>
 						<texPath>Valdor/GW_HRM_Valdor_Spear</texPath>
-						<weapon>GW_SM_Melee_ValdorSpearRanged</weapon>
+						<weapon>GW_SM_Melee_ValdorSpear</weapon>
 					</li>
 				</weaponsToSwitch>
 			</li>
