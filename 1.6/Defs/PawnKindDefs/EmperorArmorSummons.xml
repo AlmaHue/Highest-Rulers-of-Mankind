@@ -67,7 +67,8 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>ImperialFighter</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">ImperialFighter</li>
+          <li>Offworld</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -166,7 +167,8 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>ImperialFighter</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">ImperialFighter</li>
+          <li>Offworld</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -268,7 +270,8 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>ImperialFighter</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">ImperialFighter</li>
+          <li>Offworld</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
