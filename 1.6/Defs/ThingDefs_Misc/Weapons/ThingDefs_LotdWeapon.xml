@@ -192,7 +192,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_AOD_Bullet_Plasma_CannonShot</defaultProjectile>
+				<defaultProjectile>GW_Rulers_Bullet_Plasma_CannonShot</defaultProjectile>
 				<warmupTime>1.2</warmupTime>
 				<range>35</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -246,6 +246,26 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+        <defName>GW_Rulers_Bullet_Plasma_CannonShot</defName>
+        <label>plasma shot</label>
+        <graphicData>
+            <texPath>Things/Projectiles/Plasma_Projectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Vaporize</damageDef>
+            <damageAmountBase>50</damageAmountBase>
+            <stoppingPower>2.5</stoppingPower>
+            <explosionRadius>2.4</explosionRadius>
+            <armorPenetrationBase>0.85</armorPenetrationBase>
+            <speed>120</speed>
+			<explosionEffect>GW_PlasmaEffecter</explosionEffect>
+        </projectile>
+    </ThingDef>
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>GW_Rulers_Bolter_Gun_Bolter</defName>
@@ -284,7 +304,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_AOD_Bolter_Ammo</defaultProjectile>
+				<defaultProjectile>GW_Rulers_Bolter_Ammo</defaultProjectile>
 				<warmupTime>0.8</warmupTime>
 				<range>30</range>
 				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
@@ -334,6 +354,22 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_Rulers_Bolter_Ammo</defName>
+		<label>Bolter round</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Bolter_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>0.75</stoppingPower>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
         <defName>GW_Rulers_MeltaGun</defName>
@@ -377,7 +413,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_AOD_Bullet_MeltaGun</defaultProjectile>
+                <defaultProjectile>GW_Rulers_Bullet_MeltaGun</defaultProjectile>
                 <warmupTime>1</warmupTime>
                 <range>18</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -427,6 +463,23 @@
 			</li>
 		</modExtensions>
     </ThingDef>
+	<ThingDef ParentName="GW_LaserBullet" Class="VEF.Weapons.LaserBeamDef">
+        <defName>GW_Rulers_Bullet_MeltaGun</defName>
+        <label>Melta</label>
+        <description>melta beam</description>
+		<textures>
+			<li>Things/Projectiles/Melta_Projectile</li>
+		</textures>
+        <projectile>
+            <damageDef>Vaporize</damageDef>
+            <damageAmountBase>33</damageAmountBase>
+            <armorPenetrationBase>1</armorPenetrationBase>
+            <stoppingPower>2.0</stoppingPower>
+            <speed>10000</speed>
+        </projectile>
+        <modExtensions>
+        </modExtensions>
+    </ThingDef>
 	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>GW_Rulers_AstartesShotgun</defName>
@@ -465,7 +518,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_AOD_ShotgunBullet</defaultProjectile>
+				<defaultProjectile>GW_Rulers_ShotgunBullet</defaultProjectile>
 				<warmupTime>0.80</warmupTime>
 				<range>16</range>
 				<burstShotCount>6</burstShotCount>
@@ -514,5 +567,20 @@
 				</weaponDraftedDrawOffsets>
 			</li>
 		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_Rulers_ShotgunBullet</defName>
+		<label>Shotgun Pellet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<speed>65</speed>
+			<stoppingPower>0.18</stoppingPower>
+		</projectile>
 	</ThingDef>
 </Defs>

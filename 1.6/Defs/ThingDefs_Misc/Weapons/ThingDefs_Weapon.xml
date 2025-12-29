@@ -212,20 +212,20 @@
 			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
-						<drawOffset>(0.3, 0, 0.36)</drawOffset>
-						<angleOffset>-143</angleOffset>
+						<drawOffset>(0.3, 0, 0.0)</drawOffset>
+						<angleOffset>-90</angleOffset>
 					</north>
 					<east>
-						<drawOffset>(0.15, 0, 0.42)</drawOffset>
-						<angleOffset>-122</angleOffset>
+						<drawOffset>(0.15, 0, 0.0)</drawOffset>
+						<angleOffset>-90</angleOffset>
 					</east>
 					<south>
-						<drawOffset>(-0.40, 0, 0.47)</drawOffset>
-						<angleOffset>-143</angleOffset>
+						<drawOffset>(0.40, 0, 0.0)</drawOffset>
+						<angleOffset>-90</angleOffset>
 					</south>
 					<west>
-						<drawOffset>(-0.15, 0, 0.42)</drawOffset>
-						<angleOffset>122</angleOffset>
+						<drawOffset>(-0.15, 0, 0.0)</drawOffset>
+						<angleOffset>90</angleOffset>
 					</west>
 				</weaponDraftedDrawOffsets>
 			</li>
@@ -260,7 +260,7 @@
 		</costList>
 		<stuffCategories Inherit="False" IsNull="True"/>
 		<costStuffCount/>
-		<equippedAngleOffset>-45</equippedAngleOffset>
+		<!-- <equippedAngleOffset>-45</equippedAngleOffset> -->
 		<tradeability>Sellable</tradeability>
 		<uiIconScale>1.2</uiIconScale>
 		<smeltable>false</smeltable>
@@ -351,6 +351,28 @@
 			</li>
 			<!-- <li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit"></li> -->
 		</comps>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.3, 0, 0.0)</drawOffset>
+						<angleOffset>-90</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.15, 0, 0.0)</drawOffset>
+						<angleOffset>-90</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.40, 0, 0.0)</drawOffset>
+						<angleOffset>-90</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.15, 0, 0.0)</drawOffset>
+						<angleOffset>90</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>GW_Rulers_GuardianSpearBolterProjectile</defName>
@@ -410,7 +432,7 @@
 		<tradeability>Sellable</tradeability>
 		<uiIconScale>1.2</uiIconScale>
 		<smeltable>false</smeltable>
-		<equippedAngleOffset>45</equippedAngleOffset>
+		<equippedAngleOffset>-90</equippedAngleOffset>
 		<burnableByRecipe>false</burnableByRecipe>
 		<statBases>
 			<MaxHitPoints>5000</MaxHitPoints>
@@ -483,6 +505,28 @@
 				</extraMeleeDamages>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.3, 0, 0.0)</drawOffset>
+						<!-- <angleOffset>-143</angleOffset> -->
+					</north>
+					<east>
+						<drawOffset>(-0.15, 0, 0.0)</drawOffset>
+						<!-- <angleOffset>-122</angleOffset> -->
+					</east>
+					<south>
+						<drawOffset>(0.40, 0, 0.0)</drawOffset>
+						<!-- <angleOffset>-143</angleOffset> -->
+					</south>
+					<west>
+						<drawOffset>(0.15, 0, 0.0)</drawOffset>
+						<!-- <angleOffset>122</angleOffset> -->
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="CompProperties_Biocodable">
 				<biocodeOnEquip>True</biocodeOnEquip>
@@ -617,6 +661,28 @@
 				</extraMeleeDamages>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.3, 0, 0.0)</drawOffset>
+						<!-- <angleOffset>-143</angleOffset> -->
+					</north>
+					<east>
+						<drawOffset>(-0.15, 0, 0.0)</drawOffset>
+						<!-- <angleOffset>-122</angleOffset> -->
+					</east>
+					<south>
+						<drawOffset>(0.40, 0, 0.0)</drawOffset>
+						<!-- <angleOffset>-143</angleOffset> -->
+					</south>
+					<west>
+						<drawOffset>(0.15, 0, 0.0)</drawOffset>
+						<!-- <angleOffset>122</angleOffset> -->
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="CompProperties_Biocodable">
 				<biocodeOnEquip>True</biocodeOnEquip>
