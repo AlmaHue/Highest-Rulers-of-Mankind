@@ -127,7 +127,7 @@
 		<tickerType>Normal</tickerType> 
 		<costList>
 			<Plasteel>150</Plasteel>
-			<Gold>120</Gold>
+			<Gold>12</Gold>
 			<HP_Ceramite>200</HP_Ceramite>
 			<HP_Adamantium>50</HP_Adamantium>
 			<HP_Auramite>60</HP_Auramite>
@@ -194,7 +194,7 @@
 		<tickerType>Normal</tickerType> 
 		<costList>
 			<Plasteel>150</Plasteel>
-			<Gold>120</Gold>
+			<Gold>12</Gold>
 			<HP_Ceramite>200</HP_Ceramite>
 			<HP_Adamantium>50</HP_Adamantium>
 			<HP_Auramite>60</HP_Auramite>
@@ -254,7 +254,7 @@
 		<tickerType>Normal</tickerType> 
 		<costList>
 			<Plasteel>150</Plasteel>
-			<Gold>120</Gold>
+			<Gold>12</Gold>
 			<HP_Ceramite>210</HP_Ceramite>
 			<HP_Adamantium>55</HP_Adamantium>
 			<HP_Auramite>60</HP_Auramite>
@@ -334,7 +334,7 @@
 		<tickerType>Normal</tickerType> 
 		<costList>
 			<Plasteel>150</Plasteel>
-			<Gold>120</Gold>
+			<Gold>12</Gold>
 			<HP_Ceramite>210</HP_Ceramite>
 			<HP_Adamantium>55</HP_Adamantium>
 			<HP_Auramite>60</HP_Auramite>
@@ -404,7 +404,7 @@
 		<tickerType>Normal</tickerType> 
 		<costList>
 			<Hyperweave>150</Hyperweave>
-			<Gold>100</Gold>
+			<Gold>10</Gold>
 			<HP_Adamantium>40</HP_Adamantium>
 			<HP_Auramite>50</HP_Auramite>
 			<HP_Ceramite>90</HP_Ceramite>

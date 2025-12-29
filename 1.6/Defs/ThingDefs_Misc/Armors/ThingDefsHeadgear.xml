@@ -95,7 +95,7 @@
 		</equippedStatOffsets>
 		<costList>
 			<Plasteel>125</Plasteel>
-			<Gold>200</Gold>
+			<Gold>20</Gold>
 			<HP_Auramite>150</HP_Auramite>
 			<HP_Ceramite>80</HP_Ceramite>
 		</costList>
@@ -164,7 +164,7 @@
 		</equippedStatOffsets>
 		<costList>
 			<Plasteel>125</Plasteel>
-			<Gold>200</Gold>
+			<Gold>20</Gold>
 			<HP_Auramite>150</HP_Auramite>
 			<HP_Ceramite>80</HP_Ceramite>
 		</costList>
@@ -226,7 +226,7 @@
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 		</equippedStatOffsets>
 		<costList>
-			<Gold>200</Gold>
+			<Gold>20</Gold>
 			<Plasteel>125</Plasteel>
 			<HP_Auramite>50</HP_Auramite>
 			<HP_Ceramite>80</HP_Ceramite>
@@ -301,7 +301,7 @@
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 		</equippedStatOffsets>
 		<costList>
-			<Gold>200</Gold>
+			<Gold>20</Gold>
 			<Plasteel>125</Plasteel>
 			<HP_Auramite>50</HP_Auramite>
 			<HP_Ceramite>80</HP_Ceramite>
@@ -381,7 +381,7 @@
 		<tickerType>Normal</tickerType> 
 		<costList>
 			<HP_Ceramite>100</HP_Ceramite>
-			<Gold>140</Gold>
+			<Gold>14</Gold>
 			<Hyperweave>80</Hyperweave>
 			<HP_Auramite>50</HP_Auramite>
 			<ComponentSpacer>10</ComponentSpacer>
