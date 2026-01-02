@@ -10,7 +10,7 @@
 		<iconPath>UIicon/SMdrop</iconPath>
         
         
-		<cooldownTicksRange>72000</cooldownTicksRange>
+		<cooldownTicksRange>420000</cooldownTicksRange>
 		<displayOrder>300</displayOrder>
         
 		<!-- <cooldownPerCharge>true</cooldownPerCharge> -->
@@ -59,8 +59,8 @@
             <!-- <label>Summon</label> -->
             <!-- <hastarget>True</hastarget> -->
             <!-- <targetWorldMap>False</targetWorldMap> -->
-            <range>80</range>
-            <warmupTime>0.25</warmupTime>
+            <range>120</range>
+            <warmupTime>7</warmupTime>
             <!-- <burstShotCount>1</burstShotCount> -->
             <soundCast>ChargeBlaster</soundCast> <!-- Placeholder sound -->
             <requireLineOfSight>True</requireLineOfSight>
@@ -87,7 +87,7 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>2</warmupTime>
-			<range>40</range>
+			<range>100</range>
 			<targetParams>
 				<canTargetSelf>True</canTargetSelf>
 				<canTargetAnimals>True</canTargetAnimals>

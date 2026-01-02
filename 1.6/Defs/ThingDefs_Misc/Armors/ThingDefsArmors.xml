@@ -110,6 +110,8 @@
 		<equippedStatOffsets>
 			<InjuryHealingFactor>2</InjuryHealingFactor>
 			<PsychicSensitivity>2</PsychicSensitivity>
+			<PsychicSensitivityOffset MayRequire="ludeon.rimworld.royalty">0.20</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate MayRequire="ludeon.rimworld.royalty">0.090</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>240000</WorkToMake>
@@ -140,6 +142,9 @@
 			<tags>
 				<li>GW_ChapterMaster</li>
 			</tags>
+			<drawData>
+				<scale>1.2</scale>
+			</drawData>
 		</apparel>
 		<modExtensions>
 			<li Class="GW_ApparelRestriction.DefModExtension_ApparelRestriction">
@@ -183,8 +188,10 @@
 			<!-- <researchPrerequisite>GW_Rulers_OneTrueArmor</researchPrerequisite> -->
 		<!-- </recipeMaker> -->
 		<equippedStatOffsets>
-			<InjuryHealingFactor>2</InjuryHealingFactor>
+			<InjuryHealingFactor>0.7</InjuryHealingFactor>
 			<PsychicSensitivity>2</PsychicSensitivity>
+			<PsychicSensitivityOffset MayRequire="ludeon.rimworld.royalty">0.20</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate MayRequire="ludeon.rimworld.royalty">0.090</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>240000</WorkToMake>
@@ -215,6 +222,9 @@
 			<tags>
 				<li>GW_ChapterMaster</li>
 			</tags>
+			<drawData>
+				<scale>1.2</scale>
+			</drawData>
 		</apparel>
 		<modExtensions>
 			<li Class="GW_ApparelRestriction.DefModExtension_ApparelRestriction">
@@ -251,6 +261,7 @@
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
 			<PainShockThreshold>0.2</PainShockThreshold>
+			<InjuryHealingFactor>0.4</InjuryHealingFactor>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>240000</WorkToMake>
@@ -264,7 +275,7 @@
 			<Insulation_Cold>15</Insulation_Cold>
 			<Insulation_Heat>15</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
-			<EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
+			<EnergyShieldRechargeRate>0.50</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>
 		</statBases>
 		<tickerType>Normal</tickerType> 
@@ -284,7 +295,7 @@
 				<li>GW_ChapterMaster</li>
 			</tags>
 			<drawData>
-				<scale>1.3</scale>
+				<scale>1.4</scale>
 			</drawData>
 		</apparel>
 		<comps>
@@ -344,7 +355,7 @@
 			<Insulation_Cold>15</Insulation_Cold>
 			<Insulation_Heat>15</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
-			<EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
+			<EnergyShieldRechargeRate>0.50</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>
 		</statBases>
 		<tickerType>Normal</tickerType> 
