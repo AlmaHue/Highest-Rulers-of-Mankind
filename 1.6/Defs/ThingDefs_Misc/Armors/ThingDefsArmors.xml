@@ -680,6 +680,7 @@
 			<Insulation_Heat>15</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
+		<tickerType>Normal</tickerType>
 		<equippedStatOffsets>
 			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
 			<MoveSpeed>-0.3</MoveSpeed>
@@ -704,6 +705,17 @@
                 <li>GW_Gravis</li>
 			</tags>
 		</apparel>
+		<comps>
+			<li Class="BM_ApparelSet.CompProperties_ApparelSet">
+				<apparelSetEffect>
+					<allApparels>
+						<li>GW_Rulers_GravisArmor</li>
+						<li>GW_Rulers_Xth_Helmet</li>
+					</allApparels>
+					<hediff>GW40k_SS_InspiringAura</hediff>
+				</apparelSetEffect>
+			</li>
+		</comps>
     </ThingDef>
 	
 </Defs>

@@ -339,11 +339,11 @@
     <skills>
       <li>
         <skill>Shooting</skill>
-        <range>8~12</range>
+        <range>15~18</range>
       </li>
       <li>
         <skill>Melee</skill>
-        <range>8~12</range>
+        <range>15~18</range>
       </li>
     </skills>
     <biocodeWeaponChance>1.0</biocodeWeaponChance>
