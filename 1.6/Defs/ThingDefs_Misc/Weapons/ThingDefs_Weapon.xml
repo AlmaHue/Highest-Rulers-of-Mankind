@@ -196,7 +196,7 @@
 					<li>
 						<label>Ranged</label>
 						<description>Swap to Ranged</description>
-						<texPath>Valdor/GW_HRM_Valdor_Spear</texPath>
+						<texPath>Things/Weapons/GW_HRM_Valdor_Spear</texPath>
 						<weapon>GW_SM_Melee_ValdorSpearRanged</weapon>
 					</li>
 				</weaponsToSwitch>
@@ -337,7 +337,7 @@
 					<li>
 						<label>Melee</label>
 						<description>Swap to Melee</description>
-						<texPath>Valdor/GW_HRM_Valdor_Spear</texPath>
+						<texPath>Things/Weapons/GW_HRM_Valdor_Spear</texPath>
 						<weapon>GW_SM_Melee_ValdorSpear</weapon>
 					</li>
 				</weaponsToSwitch>
