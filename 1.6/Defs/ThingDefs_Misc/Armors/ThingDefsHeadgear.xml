@@ -147,6 +147,9 @@
 			<texPath>Emperor/Headgear/GW_HRM_Emperor_LaurelsC</texPath>
 		</graphicData>
 		<apparel>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
 			<tags>
 			</tags>
 			<wornGraphicPath>Emperor/Headgear/GW_HRM_Emperor_LaurelsC</wornGraphicPath>
