@@ -7,7 +7,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/EmperorClaw</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.0</drawSize>
+			<drawSize>1.5</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<equippedAngleOffset>-90</equippedAngleOffset>
