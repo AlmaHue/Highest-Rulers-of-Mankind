@@ -20,6 +20,9 @@
             <DeteriorationRate>1.0</DeteriorationRate>
         </statBases>
         <intricate>true</intricate>
+		<thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
         <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
         <allowedArchonexusCount>5</allowedArchonexusCount>
     </ThingDef>
