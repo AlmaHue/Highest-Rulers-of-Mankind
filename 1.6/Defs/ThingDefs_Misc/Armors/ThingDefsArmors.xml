@@ -506,9 +506,6 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<uiIconScale>1.0</uiIconScale>
-        <tradeTags>
-            <li>HPArmor</li>
-        </tradeTags>
 		<equippedStatOffsets>
 			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 			<VacuumResistance MayRequire="ludeon.rimworld.odyssey">0.6</VacuumResistance>
