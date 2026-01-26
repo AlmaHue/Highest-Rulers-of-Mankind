@@ -22,6 +22,9 @@
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<PawnBeauty>50</PawnBeauty>
 			<VacuumResistance MayRequire="ludeon.rimworld.odyssey">0.6</VacuumResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">0.25</HypoxiaResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+            <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<statBases>
 			<Flammability>0.0</Flammability>
@@ -52,6 +55,10 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<comps>
+		   <li MayRequire="kentington.saveourship2">
+               <compClass>SaveOurShip2.CompEVA</compClass>
+           </li>
 		<modExtensions>
 			<li Class="VEF.Apparels.ApparelExtension">
 				<isUnifiedApparel>true</isUnifiedApparel>
@@ -445,6 +452,9 @@
 		<equippedStatOffsets>
 			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 			<VacuumResistance MayRequire="ludeon.rimworld.odyssey">0.3</VacuumResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">0.25</HypoxiaResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+            <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<tradeTags>
 			<li>HPHelmet</li>
@@ -473,6 +483,10 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<comps>
+		  <li MayRequire="kentington.saveourship2">
+            <compClass>SaveOurShip2.CompEVA</compClass>
+          </li>
 	</ThingDef>
 	
 	<ThingDef ParentName="GW_RulersAOD_HelmetBase">
