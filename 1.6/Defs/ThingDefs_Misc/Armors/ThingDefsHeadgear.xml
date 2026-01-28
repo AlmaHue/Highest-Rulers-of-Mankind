@@ -59,6 +59,7 @@
 		   <li MayRequire="kentington.saveourship2">
                <compClass>SaveOurShip2.CompEVA</compClass>
            </li>
+		</comps>
 		<modExtensions>
 			<li Class="VEF.Apparels.ApparelExtension">
 				<isUnifiedApparel>true</isUnifiedApparel>
@@ -487,6 +488,7 @@
 		  <li MayRequire="kentington.saveourship2">
             <compClass>SaveOurShip2.CompEVA</compClass>
           </li>
+		</comps>	
 	</ThingDef>
 	
 	<ThingDef ParentName="GW_RulersAOD_HelmetBase">
